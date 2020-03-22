@@ -13,9 +13,9 @@ line-height:200%;
 letter-spacing: 20px;
 }
 #left{
-width:20%; 
-height: 100%;
-float: left;
+width:100%; 
+height: 10%;
+float: top;
 line-height: 350%;
 background: #669e7f;
 text-align: right;
