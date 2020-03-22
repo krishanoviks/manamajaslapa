@@ -1,78 +1,75 @@
 ﻿
+body{
+	background: #669e7f;
+}
 /*bloki*/
 #top{
+display:block;
 width:100%;
 height: 150px;
-background: #518969;
 font-family: 'Josefin Sans', sans-serif;
 font-size: 80px;
 color: #d0e5d9;
-float: right;
 text-align: center;
-line-height:200%;
+line-height:150px;
 letter-spacing: 20px;
 }
-#left{
-width:100%; 
-height: 10%;
-float: top;
-line-height: 350%;
-background: #669e7f;
-text-align: right;
-position: fixed;
-top: 0px;
-left: 0px;
-}
-#right{
-width:80%;
-height:100%;
-background: #d0e5d9;
-float: right;
-text-align: left;
-position: absolute;
-top: 0px;
-right:0px;
+#navigation{
+width:100%;
+height:66px;
+font-family: 'Josefin Sans', sans-serif;
+color: #d0e5d9;
+text-align: center;
+display:block;
 }
 #content{
-background: #d0e5d9;
-width:100%;
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  max-height:3000px;
 text-align: left;
-display: inline-block;
-}
-
-/*pogas kreisaja puse*/
-.btn-group .button {
-    background-color: rgba(80, 80, 80, 0);
-    border: 0px;
-    color: #d0e5d9;
-    padding: 10% 10% 10% 10%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 36px;
-    cursor: pointer;
-    width: 100%;
-    display: block;
+	color: #d0e5d9;
+	font-size: 36px;
 	font-family: 'Josefin Sans', sans-serif;
-	float: right;
-	position: relative;
 }
-.btn-group .button:not(:last-child) {
-    border-bottom: none; /* Prevent double borders */
+.video{
+	padding:1 1 1 1;
+	display:inline-block;
+	float:left;
+}
+.soundcloud{
+	margin: auto;
+ display:block;
+ width:70%;
+ height:300px;
+	
+}
+.musictitle{
+	text-align:center;
+margin: 40 0 15 0;
+font-size:48px;
+font-decoration:bold;
+}
+/*pogas augsa*/
+button:focus {outline:0;}
+.btn-group .button {
+	float:left;
+	padding: 15 0 15 0;
+    border: 0px;
+	color: #d0e5d9;
+	background-color: rgba(0,0,0,0);
+    text-align: center;
+    font-size: 36px;
+    width: 20%;
+	font-family: 'Josefin Sans', sans-serif;
+    cursor: pointer;
+
 }
 a{text-decoration:none;}
-button:before {
-	content:'';
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	width: 0px;
-	height: 100%;
-	background: rgba(255,255,255,0.2);
-	transition:600ms ease;
-}
-button:hover:before {
-	width: 100%;
+.btn-group .button:hover{
+  color: white;
+  transition: 0.3s;
 }
 
 .hvrbox, /* uz bildes uzbraukt*/
@@ -102,7 +99,7 @@ button:hover:before {
 	bottom: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(0, 0, 0, 0.6);
+	background: rgba(0, 0, 0, 0.1);
 	color: #fff;
 	padding: 15px;
 	-moz-transition: all 0.4s ease-in-out 0s;
@@ -115,11 +112,13 @@ button:hover:before {
 	opacity: 1;
 }
 .hvrbox .hvrbox-text {
+	background:rgba(0, 0, 0, 0.7);
+	padding:10 10 10 10;
 	text-align: center;
 	font-size: 24px;
 	display: inline-block;
 	position: absolute;
-	top: 50%;
+	top: 80%;
 	left: 50%;
 	-moz-transform: translate(-50%, -50%);
 	-webkit-transform: translate(-50%, -50%);
@@ -141,33 +140,17 @@ button:hover:before {
 
 /*bilzhu rezhgjis*/
 .row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0px;
-  background: #d0e5d9;
-  vertical-align:middle;
+padding:0 0 0 0;
+	display:inline-block;
+	float:left;
 }
+/* Create 3 equal columns that sits next to each other */
 .column {
-  flex: 15%;
-  padding: 0px;
+padding:0 0 0 0;
+  max-width: 33%;
+  float:left;
 }
 .column img {
-  margin-top: 0px;
-  vertical-align: middle;
-}
-
-.tableto {
-    border-collapse: collapse;
-    width: 100%;
-}
-.tableto th,td {
-    text-align: right;
-    padding: 8px;
-	font-size:20px;
-	font-family: 'Montserrat', sans-serif;
-}
-.tableto tr:nth-child(even){background-color: #f2f2f2}
-.tableto th {
-    background-color: #4CAF50;
-    color: white;
+  width:100%;
+  padding:0 0 0 0px;
 }
