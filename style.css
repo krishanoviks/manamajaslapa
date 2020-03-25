@@ -68,7 +68,6 @@ button:focus {outline:0;}
     width: 20%;
 	font-family: 'Josefin Sans', sans-serif;
     cursor: pointer;
-
 }
 a{text-decoration:none;
 color: #60495a;
@@ -167,3 +166,12 @@ padding:0 0 0 0;
   width:100%;
   padding:0 0 0 0px;
 }
+
+table {
+  border-collapse: collapse;
+  width: 60%;
+  display:block;
+  float:right;
+}
+
+
