@@ -70,7 +70,16 @@ button:focus {outline:0;}
     cursor: pointer;
 
 }
-a{text-decoration:none;}
+a{text-decoration:none;
+color: #60495a;
+  transition: 0.3s;}
+a:hover{text-decoration:none;
+color: white;
+}
+a:focus {text-decoration:none;
+color: #60495a;}
+a:after {text-decoration:none;
+color: #60495a;}
 .btn-group .button:hover{
   color: white;
   transition: 0.3s;
